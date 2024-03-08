@@ -2,6 +2,7 @@
 import { theme } from './theme';
 
 export default defineNuxtConfig({
+	ssr: false,
 	// https://nuxt.com/docs/api/configuration/nuxt-config
 
 	routeRules: {
@@ -98,7 +99,7 @@ export default defineNuxtConfig({
 
 	site: {
 		url: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-		name: 'AgencyOS',
+		name: 'Patrick Hennessey Advisory LLC',
 	},
 
 	// OG Image Configuration - https://nuxtseo.com/og-image/getting-started/installation

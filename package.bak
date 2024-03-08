@@ -55,6 +55,7 @@
 		"@nuxt/image": "1.1.0",
 		"nuxt-og-image": "3.0.0-rc.23"
 	},
+	"packageManager": "pnpm@8.6.0",
 	"engines": {
 		"node": ">=18.0.0",
 		"pnpm": ">=8.6.0"
