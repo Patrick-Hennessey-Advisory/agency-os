@@ -3,7 +3,7 @@ services:
   database:
     image: postgis/postgis:13-master
     # Required when running on platform other than amd64, like Apple M1/M2:
-    # platform: linux/amd64
+    platform: linux/amd64
     ports:
       - 5432:5432
     volumes:
@@ -17,7 +17,7 @@ services:
     image: redis:6
 
   directus:
-    image: directus/directus:10.8.3
+    image: directus/directus:latest
     ports:
       - 8055:8055
     volumes:
@@ -57,3 +57,4 @@ services:
       # Make sure to set this in production
       # (see https://docs.directus.io/self-hosted/config-options#general)
       # PUBLIC_URL: 'https://directus.example.com'
+      CONTENT_SECURITY_POLICY_DIRECTIVES__FRAME_SRC: 'localhost'
